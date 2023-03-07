@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(https://i.postimg.cc/cJSXvQZV/ciudad-en-movimiento-3840x2400-xtrafondos-com.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.login-box {
+  width: 320px;
+  height: 420px;
+  background: black;
+  color: white;
+  top: 100%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  border-radius: 10px;
+}
+.login-box .Avatar{
+    border: solid 2px #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+    top: -50%;
+    left: calc(-50% -50%);
+
+
+}
+.login-box h1{
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+
+}
+.login-box label{
+    margin: 0;
+    padding: 0;
+    font-weigh:bold;
+    display: block;
+
+
+}
+.login-box input{
+    width: 100%;
+    margin-bottom: 20px;
+
+}
