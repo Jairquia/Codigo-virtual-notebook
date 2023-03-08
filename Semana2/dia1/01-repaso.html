@@ -1,0 +1,59 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejer CSS</title>
+        
+        <link rel="stylesheet" href="./exe.css">
+       <style>
+        section {
+            font-size: 20px;
+        
+        }
+        p {
+            font-size: 36px;
+        }
+        /* todos los elementos de clase "rojo" que sean descendientes en cualquier nivel de la clase 'grande' */
+        .grande .rojo {
+            font-size: 50px
+        }
+        
+        .p {
+
+        }
+        body {
+         color:#eee;
+         background-color: #222;
+       }
+       /* todos los hijos directos en primer grado de un elemento ul */
+       ul>li{
+        border:  1px solid red;
+       }
+        
+
+       </style>
+     
+
+    </head>
+    <body>
+      <section>
+        <p>texto  del parrafo</p>
+Texto fuera del parrafo
+<p class=" grande">texto del <span class="rojo">parrafo</span> gande</p>
+      </section>
+      <section>
+        <ul>
+            <li>JavaScript</li>
+            <ol>
+                <li>NodeJS</li>
+                <li>Browser</li>
+            </ol>
+            <li>Python</li>
+            <li>TypeScript</li>
+        </ul>
+      </section>
+        
+    </body>
+    </html>
