@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .caja-1 {
+        height: 200px;
+        background-color: rgb(150, 100, 92);
+      }
+
+      .caja-2 {
+        height: 200px;
+        background-image: url(./leon.jpg);
+        background-repeat: repeat-y;
+        background-color: blueviolet;
+        background-size: 500px;
+        /* el background es manipulable a nuestro antojo */
+      }
+      .caja-3 {
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+        border-radius: 50px;
+      }
+      .caja-4 {
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+        border-radius: 50%;
+        background-image: url(./leon.jpg);
+      }
+      .caja-5 {
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+        border-radius: 50px;
+        overflow: hidden;
+      }
+      /* toda aquella etiqueta que sea una etiqueta imagen que este dentro de un elemtneo que tenga la clase caja 5, voy a aplicare un estilo*/
+      /* .caja-5 img { */
+      /* height: 200px;
+        width: 200px; */
+      .caja-5 img {
+        height: 100%;
+        width: 100%;
+      }
+      /* funciona por que el padre tiene un alto y ancho definido */
+      .caja-blur {
+        filter: blur(5px);
+        cursor: pointer;
+      }
+      .caja-blur:hover {
+        filter: blur(0px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="caja-1">Caja1</div>
+    <div class="caja-2">Caja2</div>
+    <div class="caja-3">Caja3</div>
+    <div class="caja-4"></div>
+    <div class="caja-blur">
+      <img src="./leon.jpg" alt="" />
+    </div>
+    <!-- imagen dentro de div o no dentro figure... -->
+  </body>
+</html>
