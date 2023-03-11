@@ -1,0 +1,34 @@
+.papa {
+    display: flex;
+    margin: 30px;
+}
+div {
+    margin: 20px;
+}
+/* a partir de ahora usamos Flexbox y ya no posicionamiento */
+.main-navigation{
+    display: flex;
+    /* para evitarnos usar padding bottom, margenes y eso */
+    justify-content: space-between ;
+    
+}
+.papa-box{
+    height: 50vh;
+    border: solid rgb(63, 167, 201);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* con esta propiedad el contenido de papa box se adaptara siempre a su forma
+    "adaptar es la palabra clave */
+    justify-content: space-between ;
+    /* estas propiedades estan afectando a todos los hijos de papa box por igual 
+    si queremos q las hijos se comporten de forma individual habria q usar 
+    selectores mas especificos */
+
+}
+.box{
+    width: 120px;
+    height: 120px;
+    background-color: rgb(156, 198, 223);
+}

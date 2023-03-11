@@ -1,0 +1,45 @@
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+.main__sidebar {
+    width: 240px;
+    border: 1px solid red;
+    height: 200px;
+    display: inline-block;
+}
+.main__principal {
+    width: 600px;
+    border: 1px solid purple;
+    height: 200px;
+    display: inline-block;
+
+}
+.navbar__listitem {
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 20px;
+    padding: 3.5px 10px;
+
+
+}
+.navbar__list {
+    list-style: none;
+    text-align: center;
+    background-color: blueviolet;
+}
+/* para asegurarnos de que la vinetas hayan desaparecido */
+.navbar {
+    height: 50px;
+    box-shadow: #444 0px 0px 8px;
+}
+.active {
+    background-color: #0287a8;
+    border-radius: 5px;
+    padding: 3.5px 10px;
+    /* pasinf es mejro es mejor q width para estas cajas */
+
+
+}
